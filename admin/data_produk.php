@@ -61,7 +61,7 @@
                                             <td><?php echo $data['nama_barang']; ?></td>
                                             <td><img src="../foto/<?php echo $data['foto']; ?>" width="80px" alt=""></td>
                                             <td><?php echo $data['jenis_barang']; ?></td>
-                                            <td>Rp.<?= number_format($data['harga_satuan']); ?></td>
+                                            <td>Rp. <?= number_format($data['harga_satuan']); ?></td>
                                             <td><?php echo $data['stok_barang']; ?></td>
                                             <td>
                                                 <!-- Button -->

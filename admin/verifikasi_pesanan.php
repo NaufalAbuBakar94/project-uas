@@ -35,7 +35,7 @@ require '../koneksi.php';
         <td><?php echo $data['id_barang']; ?></td>
         <td><?php echo $data['tgl_transaksi']; ?></td>
         <td><?php echo $data['jumlah_barang']; ?></td>
-        <td><?php echo $data['total_harga']; ?></td>
+        <td>Rp. <?= number_format($data['total_harga']); ?></td>
         
     <td>
         <?php if ($data['status'] == "accept") : ?>

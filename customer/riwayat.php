@@ -13,7 +13,7 @@ require '../koneksi.php';
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Login Admin</title>
+    <title>Riwayat Pembelian</title>
 
     <!-- Custom fonts for this template-->
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -59,17 +59,15 @@ require '../koneksi.php';
         <td><?php echo $data['id_barang']; ?></td>
         <td><?php echo $data['tgl_transaksi']; ?></td>
         <td><?php echo $data['jumlah_barang']; ?></td>
-        <td><?php echo $data['total_harga']; ?></td>
+        <td>Rp. <?= number_format($data['total_harga']); ?></td>
         
     <td>
         <?php if ($data['status'] == "accept") : ?>
-        <p style="color: green; font-weight: bold"><?= $data['status'] ?></p>
+        <p class="btn btn-success" style="margin: 2px;"><?= $data['status'] ?></p>
         <?php elseif ($data['status'] == "batal") : ?>
-        <p style="color: red; font-weight: bold;"><?= $data['status'] ?></p>
+        <p class="btn btn-danger" style="margin: 2px;"><?= $data['status'] ?></p>
         <?php else: ?>
-        <p><?= $data['status'] ?></p>
-        <a href="accept.php?id=<?= $data['id_transaksi'] ?>" class="btn btn-success">Accept</a>
-        <a href="batal.php?id=<?= $data['id_transaksi'] ?>" class="btn btn-danger">Batal</a>
+        <p class="btn btn-warning" style="margin: 2px;"><?= $data['status'] ?></p>
         <?php endif;?>
       </td>
     </tr>
@@ -79,6 +77,14 @@ require '../koneksi.php';
 </div>
 </div>
 </div>
+<div class="card-body">
+    <div class="form-group cols-sm-6">
+    <a href="index.php" class="btn btn-primary btn-icon-split">
+        <span class="icon text-white-50">
+            <i class="fas fa-arrow-left"></i>
+        </span>
+        <span class="text">Kembali</span>
+    </a>
 
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

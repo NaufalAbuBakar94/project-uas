@@ -5,12 +5,12 @@ $id = $_GET["id"];
 if (batal($id) > 0) {
     echo "<script>
         alert('Transaksi Dibatalkan');
-        location='verifikasi_pesanan.php';
+        location='stok.php';
     </script>";
 } else{
     echo "<script>
         alert('Terjadi Kesalahan');
-        location='verifikasi_pesanan.php';
+        location='stok.php';
     </script>";
 }
 

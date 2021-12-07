@@ -13,6 +13,7 @@
         <div class="nav-links">
             <ul>
                 <li><a href="../customer/index.php">Beranda</a></li>
+                <li><a href="../customer/pesanan.php">Pesanan</a></li>
                 <li><a href="../customer/riwayat.php">Riwayat Pembelian</a></li>
                 <li><a href="../logout.php">Logout</a></li>
             </ul>

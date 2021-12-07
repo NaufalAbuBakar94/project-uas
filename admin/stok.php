@@ -14,7 +14,7 @@
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="index.php">TOKO AC</a>
+            <a class="navbar-brand ps-3" href="?=admin">TOKO AC</a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
@@ -23,6 +23,15 @@
             
         </nav>
         <body id="page-top">
+            <div class="card-body">
+                <div class="form-group cols-sm-6">
+                        <a href="index.php" class="btn btn-primary btn-icon-split">
+                            <span class="icon text-white-50">
+                                <i class="fas fa-arrow-left"></i>
+                            </span>
+                            <span class="text">Kembali</span>
+                        </a>
+                    </div>
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
@@ -55,7 +64,7 @@
                                             <td><?php echo $data['id_barang']; ?></td>
                                             <td><?php echo $data['tgl_transaksi']; ?></td>
                                             <td><?php echo $data['jumlah_barang']; ?></td>
-                                            <td><?php echo $data['total_harga']; ?></td>
+                                            <td>Rp. <?= number_format($data['total_harga']); ?></td>
                                             <td><?php echo $data['status']; ?></td>
                                         </tr>
                                         
