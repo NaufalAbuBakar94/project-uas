@@ -25,7 +25,7 @@
 <body id="page-top">
     <div class="card shadow">
         <div class="card-header">
-            Tambah Petugas
+            Tambah Barang
         </div>
         <div class="card-body">
             <form action="simpan_barang.php" method="post" class="form-horizontal" enctype="multipart/form-data">
