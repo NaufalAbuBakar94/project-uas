@@ -57,7 +57,7 @@
                                         
                                     <div class="text-center">
                                         Belum punya akun ? <br>
-                                        <a class="btn btn-dark" href="../register/register.php">Register!</a>
+                                        <a class="btn btn-dark" href="../register/register.php">Daftar Sekarang!</a>
                                     </div>
                                     <br>
                                     <div class="text-center">

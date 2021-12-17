@@ -6,7 +6,8 @@ include "../koneksi.php";
     $nama= $_POST['nama_user'];
     $role= $_POST['role'];
 
-    $simpan = "INSERT into user VALUES (null, '$username','$password','$nama','$role')";
+    $simpan = "INSERT into user (username,password,nama_user,role)
+               VALUES ('$username','$password','$nama','$role')";
                
     $result = mysqli_query($conn, $simpan);
     if($result){ //jika simpan berhasil maka muncul pesan dan menuju ke halaman

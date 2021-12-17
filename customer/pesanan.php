@@ -42,12 +42,12 @@ $transaksi = tampilkan_transaksi_user($nama);
         <p class="card-text">Harga Total : Rp. <?= number_format($row['total_harga']) ?></p>
 
         <?php if ($row['status'] == "accept") : ?>
-        <p class="btn btn-success" style="margin: 2px;"><?= $row['status'] ?></p>
+        <p style="color: green; font-weight: bold"><?= $row['status'] ?></p>
         <?php elseif ($row['status'] == "batal") : ?>
-        <p class="btn btn-danger" style="margin: 2px;"><?= $row['status'] ?></p>
+        <p style="color: red; font-weight: bold;"><?= $row['status'] ?></p>
         <?php else: ?>
-        <p class="btn btn-warning" style="margin: 2px;"><?= $row['status'] ?></p>
-        <?php endif; ?>
+        <p style="color: yellow; font-weight: bold;"><?= $row['status'] ?></p>
+        <?php endif;?>
 
     </div>
     <?php endforeach; ?>

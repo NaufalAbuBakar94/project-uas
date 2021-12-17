@@ -63,11 +63,11 @@ require '../koneksi.php';
         
     <td>
         <?php if ($data['status'] == "accept") : ?>
-        <p class="btn btn-success" style="margin: 2px;"><?= $data['status'] ?></p>
+        <p style="color: green; font-weight: bold"><?= $data['status'] ?></p>
         <?php elseif ($data['status'] == "batal") : ?>
-        <p class="btn btn-danger" style="margin: 2px;"><?= $data['status'] ?></p>
+        <p style="color: red; font-weight: bold;"><?= $data['status'] ?></p>
         <?php else: ?>
-        <p class="btn btn-warning" style="margin: 2px;"><?= $data['status'] ?></p>
+        <p style="color: yellow; font-weight: bold;"><?= $data['status'] ?></p>
         <?php endif;?>
       </td>
     </tr>

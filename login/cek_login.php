@@ -25,11 +25,7 @@ if($cek > 0){
         header("Location: ../customer/index.php");
 }
 }else{
-    echo "
-        <script type='text/javascript'>
-        alert('Username atau Password tidak ditemukan')
-        </script>
-        ";
+    echo "<script>alert('Username atau Passsword tidak ditemukan');document.location='../login/index.php'</script>";
 }
 
 

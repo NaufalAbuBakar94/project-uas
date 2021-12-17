@@ -39,13 +39,13 @@
                             <div class="col-lg-12">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Registrasi Akun</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">Pendaftaran Akun</h1>
                                         <h2>Aplikasi Penjualan AC</h2>
                                     </div>
                                     <form class="user" method="post" action="simpandata.php">
                                         <div class="form-group">
                                             <input type="text" name="username" class="form-control form-control-user"
-                                                placeholder="Masukkan Username">
+                                                placeholder="Masukkan username!">
                                         </div>
                                         <div class="form-group">
                                             <input type="password" name="password" class="form-control form-control-user"
@@ -67,7 +67,7 @@
                                         <hr>
                                         <div class="text-center">
                                             Sudah Punya Akun ? <br> 
-                                        <a class="small" href="index.php">Silahkan Login</a>
+                                        <a class="small" href="../login/index.php">Silahkan Login</a>
                                     </div>    
                                     </form>
                                     <hr>
